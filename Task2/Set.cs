@@ -261,11 +261,6 @@ namespace Task2
         }
 
 
-
-       
-        
-        
-        
         
         public int Indexer(Object o)
         {
@@ -411,60 +406,45 @@ namespace Task2
            Set<T> temp = head;
            Set<T> prev = head;
            int i = 0;
-
            while (temp != null)
            {
                if (i > 0)
                {
-
                    if (temp.data.Equals(Obj))
                    {
                        prev.next = temp.next;
                        temp.next = null;
                    }
-
                    prev = prev.next;
                }
                else
                {
-
-                   if (temp.data.Equals(Obj))
+                  if (temp.data.Equals(Obj))
                    {
                        head = head.next;
                        temp.next = null;
-
                    }
-
                }
                temp = temp.next;
-
                i++;
-
            }
-
        }*/
-
 
         /* public Boolean Find(Object Obj)
          {
              Set<T> temp = head;
-
              while (temp.next != null)
              {
-
                  if (temp.data.Equals(Obj))
                  {
                      return true;
-                 }
-               
-                 temp = temp.next;
-               
+                 }              
+                 temp = temp.next;              
              }
              if (temp.data.Equals(Obj))
              {
                  return true;
              }
-
              return false;
          }
 
